@@ -63,4 +63,4 @@ GestureDebouncer(
 ```
 
 ## Video
-![](https://github.com/abhay-s-rawat/gesture_debouncer/blob/main/example/screenshots/gesture_debouncer.webm)
+![](https://github.com/abhay-s-rawat/gesture_debouncer/blob/main/example/screenshots/gesture_debouncer.gif)
