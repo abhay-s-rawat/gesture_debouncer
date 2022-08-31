@@ -40,6 +40,17 @@ for full example please view example/main.dart
       onPressed: onPressed,
     );
   }
+  // For detecting other gestures
+    Widget _getDoubleClickWidget(onPressed) {
+    return GestureDetector(
+      onDoubleTap: onPressed,
+      child: Icon(
+        liked2 ? FontAwesome.heart : FontAwesome.heart_empty,
+        size: iconSize,
+        color: liked2 ? Colors.green : Colors.grey,
+      ),
+    );
+  }
 ```
 ```dart
 GestureDebouncer(
@@ -83,3 +94,4 @@ GestureDebouncer(
 
 ## Screenshot
 ![](https://github.com/abhay-s-rawat/gesture_debouncer/blob/main/example/screenshots/gesture_debouncer.gif)
+![](https://github.com/abhay-s-rawat/gesture_debouncer/blob/main/example/screenshots/gesture_debouncer_2.gif)

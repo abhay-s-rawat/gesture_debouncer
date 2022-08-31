@@ -1,6 +1,6 @@
 name: gesture_debouncer
 description: Created simple widget that can act as debouncer to absorb certain gestures according to the cooldowns/futures.
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/abhay-s-rawat/gesture_debouncer
 
 environment:

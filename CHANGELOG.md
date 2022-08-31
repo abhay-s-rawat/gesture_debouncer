@@ -5,3 +5,7 @@
 ## 0.0.2
 
 * License update.
+
+## 0.0.2
+
+* Updated example for other gesture too.
