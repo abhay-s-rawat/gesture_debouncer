@@ -5,6 +5,25 @@
 # gesture_debouncer
 
 Created simple widget that can act as debouncer to absorb certain gestures according to the cooldowns/futures.
+This widget is super helpful when triggering a backend api with ui interaction. It makes sure that if user by mistake clicked several times then backend api is not called in every click.
+Usually websockets/rest api use callbacks on success, in such cases use Completer to convert them to Future and use in this widget.
+```dart
+    Completer<List?> completer = Completer<List?>();
+    Socketio!.emitWithAck("your backend socketio event", params, ack: (data) {
+      if (data) // if data is as expected
+      {
+        if (!completer.isCompleted) {
+          completer.complete(data);
+        }
+      } else {
+        if (!completer.isCompleted) {
+          completer.complete(null);
+        }
+      }
+    });
+    return completer.future;
+
+```
 
 Liked my work ? [support me](https://www.buymeacoffee.com/abhayrawat)
 
